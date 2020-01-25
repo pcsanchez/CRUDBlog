@@ -7,6 +7,7 @@ const jsonParser = bodyParser.json();
 
 const app = express();
 
+app.use(express.static('public'));
 app.use(morgan('dev'));
 
 let comentarios = [{
